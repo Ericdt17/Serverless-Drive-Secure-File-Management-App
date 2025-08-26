@@ -1,152 +1,91 @@
-<div align="center">
-  <br />
-    <a href="https://youtu.be/lie0cr3wESQ" target="_blank">
-      <img src="public/readme/hero.png" alt="Project Banner">
-    </a>
-  <br />
+📦 Serverless Drive – Secure File Management
 
-  <div>
-     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-    <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
-  </div>
+A modern storage and file sharing platform inspired by Google Drive/Dropbox.
+This app solves the problem of unsafe file sharing and poor collaboration by allowing users to:
 
-<h3 align="center">Storage and File Sharing Platform</h3>
+log in securely with passwordless OTP authentication,
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
-</div>
+upload, preview, and manage files,
 
-## 📋 <a name="table">Table of Contents</a>
+share documents with others,
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🔗 [Assets](#links)
-6. 🚀 [More](#more)
+and track their usage through a clean dashboard.
 
-## 🚨 Tutorial
+This project demonstrates my ability to build production-ready full-stack applications with a modern UI, secure authentication, scalable backend, and cloud storage.
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube
-channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
+⚙️ Tech Stack
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects
-like these step-by-step in a beginner-friendly manner!
+React 19
 
-<a href="https://youtu.be/lie0cr3wESQ?si=yLQyhMrYLjpysnqE" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+Next.js 15
 
-## <a name="introduction">🤖 Introduction</a>
+TailwindCSS + ShadCN UI
 
-A storage management and file sharing platform that lets users effortlessly upload, organize, and share files. Built with the latest Next.js 15 and the Appwrite Node SDK, utilizing advanced features for seamless file management.
+TypeScript
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+**
-members. It's a place where people help each other out.
+Appwrite (Auth, Database, Storage)
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+🔋 Features
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+🔑 Secure Authentication – Passwordless login with Appwrite
 
-- React 19
-- Next.js 15
-- Appwrite
-- TailwindCSS
-- ShadCN
-- TypeScript
+📂 File Uploads – Upload documents, images, videos, and audio
 
-## <a name="features">🔋 Features</a>
+👀 Preview & Manage – Rename, delete, or view files instantly
 
-👉 **User Authentication with Appwrite**: Implement signup, login, and logout functionality using Appwrite's authentication system.
+⬇️ Downloads – Retrieve files at any time
 
-👉 **FIle Uploads**: Effortlessly upload a variety of file types, including documents, images, videos, and audio, ensuring all your important data.
+🤝 File Sharing – Collaborate by sharing links securely
 
-👉 **View and Manage Files**: Users can browse through their uploaded files stored in Appwrite storage, view on a new tab, rename file or delete.
+📊 Dashboard – Track storage usage, recent uploads, and file types
 
-👉 **Download Files**: Users can download their uploaded files giving them instant access to essential documents.
+🔍 Global Search & Sorting – Quickly find and organize files
 
-👉 **File Sharing**: Users can easily share their uploaded files with others, enabling collaboration and easy access to important content.
+📱 Responsive Design – Clean, modern UI across devices
 
-👉 **Dashboard**: Gain insights at a glance with a dynamic dashboard that showcases total and consumed storage, recent uploads, and a summary of files grouped by type.
+🚀 Getting Started
 
-👉 **Global Search**: Users can quickly find files and shared content across the platform with a robust global search feature.
+1. Clone the repository
 
-👉 **Sorting Options**: Organize files efficiently by sorting them by date, name, or size, making file management a breeze.
+git clone https://github.com/Ericdt17/Serverless-Drive-Secure-File-Management-App.git
+cd serverless-drive
 
-👉 **Modern Responsive Design**: A fresh and minimalist UI that emphasizes usability, ensuring a clean aesthetic across all devices.
 
-and many more, including the latest **React 19**, **Next.js 15** and **Appwrite** features alongside code architecture and
-reusability
+2. Install dependencies
 
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/JavaScript-Mastery-Pro/storage_management_solution.git
-cd storage_management_solution
-```
-
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
 npm install
-```
 
-**Set Up Environment Variables**
 
-Create a new file named `.env.local` in the root of your project and add the following content:
+3. Configure environment variables
+Create .env.local with your Appwrite credentials:
 
-```env
 NEXT_PUBLIC_APPWRITE_ENDPOINT="https://cloud.appwrite.io/v1"
-NEXT_PUBLIC_APPWRITE_PROJECT=""
-NEXT_PUBLIC_APPWRITE_DATABASE=""
-NEXT_PUBLIC_APPWRITE_USERS_COLLECTION=""
-NEXT_PUBLIC_APPWRITE_FILES_COLLECTION=""
-NEXT_PUBLIC_APPWRITE_BUCKET=""
-NEXT_APPWRITE_KEY=""
-```
+NEXT_PUBLIC_APPWRITE_PROJECT="your-project-id"
+NEXT_PUBLIC_APPWRITE_DATABASE="your-database-id"
+NEXT_PUBLIC_APPWRITE_USERS_COLLECTION="your-users-collection"
+NEXT_PUBLIC_APPWRITE_FILES_COLLECTION="your-files-collection"
+NEXT_PUBLIC_APPWRITE_BUCKET="your-bucket-id"
+NEXT_APPWRITE_KEY="your-secret-key"
 
-Replace the values with your actual Appwrite credentials. You can obtain these credentials by signing up &
-creating a new project on the [Appwrite website](https://appwrite.io/).
 
-**Running the Project**
+4. Run locally
 
-```bash
 npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-## <a name="links">🔗 Assets</a>
-
-- Assets used in the project can be found [here](https://jsm.dev/gdrive-kit)
-
-<a href="https://jsm.dev/gdrive-kit">
-  <img src="public/readme/videokit.png" alt="Video Kit Banner">
-</a>
 
 
-## <a name="more">🚀 More</a>
+Visit http://localhost:3000
+.
 
-**Advance your skills with Next.js Pro Course**
+🎯 Why this project matters
 
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
+This project was built to practice secure file management and demonstrate:
 
-<a href="https://jsm.dev/gdrive-jsmpro" target="_blank">
-  <img src="public/readme/jsmpro.png" alt="Project Banner">
-</a>
+Authentication flows (OTP, sessions)
+
+File handling with cloud storage
+
+Real-time search and dashboards
+
+Responsive, modern frontend design
+
+It showcases the skills companies need for full-stack development: React, Next.js, TypeScript, authentication, cloud APIs, and clean UI/UX.
